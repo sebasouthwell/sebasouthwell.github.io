@@ -1,0 +1,49 @@
+@import "normalize";
+@import "rouge-github";
+@import "variables";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-linkedin {
+    background: #003863;
+    color: white;
+  }
+
+  .fa-facebook {
+    background: #003863;
+    color: white;
+  }
+
+  .site-footer {
+    background: #888888;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    border-top: solid 1px $hr-border-color;
+    text-align: center;
+  }
+  .site-footer span{
+      color: white;
+      font-weight: bold;
+  }
+
+  .page-header{
+    text-align: center;
+    padding-bottom: 1rem;
+    align-content: center;
+    color: $header-heading-color;
+    background-color: $header-bg-color;
+    background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  }
+  .logo-image{
+    width: 100px;
+    height: 100px;
+  }
