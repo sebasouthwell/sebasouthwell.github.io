@@ -17,7 +17,7 @@
     <header class="page-header" role="banner">
       <a href="/"><img src="/assets/images/logo.png" class="logo-image"></a>
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: "" }}</h2>
       <div>
         <a id="hamburger-menu" class="fas fa-bars"></a>
       </div>
@@ -30,7 +30,7 @@
           </li>
           <li>
             <div>
-              <a href="/projects">Current and Previous Projects</a>
+              <a href="/projects">Projects</a>
             </div>
           </li>
           <li>
@@ -47,14 +47,16 @@
       </nav>
     </header>
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <div id="all-content">
+        {{ content }}
+      </div>
       <footer class="site-footer">
         <span>Social Media </span>
         <a href="https://www.linkedin.com/in/sebastian-southwell/" class="fa fa-linkedin"></a>
         <a href="https://www.facebook.com/SebNeedsABetterUsername" class="fa fa-facebook"></a>
-        <a href="" class="fab fa fa-discord" hidden></a>
+        <a onclick="copyDiscord();" class="fa fa-discord"></a>
         <form action="mailto:sas@sebasouthwell.co.uk"method="post"enctype="text/plain" class="fa" id="emailSend">
-            <a type="submit" onclick="document.getElementById('emailSend').submit();" class="fa fa-envelope"></a>
+            <a onclick="document.getElementById('emailSend').submit();" class="fa fa-envelope"></a>
         </form>
         <br>
         <span class="site-footer-owner">Copyright © Sebastian Southwell 2021.</a></span>

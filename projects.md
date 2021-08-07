@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sebastian Southwell
-description: Current & Previous Projects
+description: Projects
 ---
 
 ## Welcome to another page

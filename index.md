@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Sebastian Southwell
-description: Home
 ---
 
 # Welcome to the Site
