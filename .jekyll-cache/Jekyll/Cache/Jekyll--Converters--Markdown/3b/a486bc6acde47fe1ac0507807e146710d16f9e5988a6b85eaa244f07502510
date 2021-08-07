@@ -1,6 +1,29 @@
-I"<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+I"q<h1 id="welcome-to-the-site">Welcome to the Site</h1>
+<p>My name is <strong>Sebastian Southwell</strong>, and I am currently a Second-Year Computer Science student at the <a href="https://www.sheffield.ac.uk/">University of Sheffield</a>. I have already been learning Computer Science for at least 5 years now and have made a variety of projects in my spare time.</p>
 
-<p><a href="./another-page.html">Link to another page</a>.</p>
+<p>I am competent in a variety of languages such as:</p>
+
+<div>
+<ul>
+<li>
+Python (2016)
+</li>
+<li>
+C# (2018)
+</li>
+<li>
+Java (2020)
+</li>
+</ul>
+
+* 
+* 
+* 
+* Ruby (2020)
+* JavaScript (2020)
+* HTML &amp; CSS(2020, Hence this website)
+
+</div>
 
 <p>There should be whitespace between paragraphs.</p>
 
@@ -140,8 +163,6 @@
 <p><img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="Octocat" /></p>
 
 <h3 id="large-image">Large image</h3>
-
-<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="Branching" /></p>
 
 <h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
 
