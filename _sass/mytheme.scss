@@ -3,7 +3,6 @@
 @import "variables";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-
 .fa {
     padding: 10px;
     font-size: 20px;
@@ -116,6 +115,7 @@
   nav{
     align-content: center;
     justify-content: center;
+    display: none;
   }
 
   nav ul{
@@ -128,9 +128,19 @@
   nav ul li div{
     border-radius: 10%;
     border: 2px solid #5a0000;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.4);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding: 1rem 0 0 0;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     width: 10em;
     height: 3em;
-    background-color: rgb(51, 0, 0);
+    text-align: center;
+    justify-content: center;
+    //background-color: rgb(51, 0, 0);
   }
   
   nav ul li a{
@@ -160,6 +170,15 @@
     nav ul li div{
       width: 95%;
     }
+    .logo-image{
+      width: 80px;
+      height: 80px;
+    }
+
+    .hamburger-menu{
+      display: inline-block;
+      font-size: 40px;
+    }
   }
   @media (min-width:800px)
   {
@@ -170,7 +189,7 @@
       margin-right:auto;
       align-content: center;
     }
-    
+
     nav ul{
       flex-direction: row;
     }
@@ -178,4 +197,15 @@
     nav ul li{
       padding: 0% 2.5% 0% 0;
     }
+    nav{
+      display: block;
+    }
+
+    .hamburger-menu{
+      display: none;
+    }
+  }
+
+  .visible-nav{
+    display:block;
   }
