@@ -105,17 +105,6 @@
     margin-right:auto;
   }
 
-  @media (min-width:800px)
-  {
-    .main-content p{
-      text-align: center;
-      max-width: 50%;
-      margin-left:auto;
-      margin-right:auto;
-      align-content: center;
-    }
-  }
-
   .hiddenSubmit{
     visibility:hidden;
   }
@@ -130,7 +119,6 @@
 
   nav ul{
     list-style: none;
-    flex-direction: row;
     align-content: center;
     display: flex;
     justify-content: center;
@@ -161,3 +149,17 @@
     margin: 0;
   }
   
+  @media (min-width:800px)
+  {
+    .main-content p{
+      text-align: center;
+      max-width: 50%;
+      margin-left:auto;
+      margin-right:auto;
+      align-content: center;
+    }
+    
+    nav ul{
+      flex-direction: row;
+    }
+  }
