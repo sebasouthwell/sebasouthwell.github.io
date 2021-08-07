@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/1e89297854.js" crossorigin="anonymous"></script>
-
+    <script src="/assets/js/default.js"></script>
 
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +19,9 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <div>
-        <a class="fas fa-bars hamburger-menu"></a>
+        <a id="hamburger-menu" class="fas fa-bars"></a>
       </div>
-      <nav>
+      <nav id="page-nav-bar">
         <ul>
           <li>
             <div>
