@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Sebastian Southwell
 description: Home
 ---
 
