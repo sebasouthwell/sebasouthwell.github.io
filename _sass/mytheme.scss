@@ -115,6 +115,7 @@
 
   nav{
     align-content: center;
+    justify-content: center;
   }
 
   nav ul{
@@ -122,9 +123,6 @@
     align-content: center;
     display: flex;
     justify-content: center;
-  }
-  nav ul li{
-    padding: 0% 2.5% 0% 0;
   }
   
   nav ul li div{
@@ -149,6 +147,20 @@
     margin: 0;
   }
   
+  @media (max-width:800px) {
+    nav ul{
+      display: block;
+      flex-direction: column;
+      max-width: 100%;
+      padding-left: 5%;
+    }
+    nav ul li{
+      padding: 2.5% 0% 0% 0;
+    }
+    nav ul li div{
+      width: 95%;
+    }
+  }
   @media (min-width:800px)
   {
     .main-content p{
@@ -161,5 +173,9 @@
     
     nav ul{
       flex-direction: row;
+    }
+
+    nav ul li{
+      padding: 0% 2.5% 0% 0;
     }
   }
