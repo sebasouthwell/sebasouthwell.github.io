@@ -3,7 +3,14 @@
 @import "variables";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+html{
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+}
 
+#content{
+  background-color: white;
+  height: 100%;
+}
 h1,h2{
   text-align: center;
 }
@@ -44,7 +51,7 @@ h1,h2{
     padding-bottom: 1rem;
     clear: both;
     display: inline-block;
-    position: sticky;
+    position:fixed;
     border-top: solid 1px $hr-border-color;
     text-align: center;
     left: 0;
@@ -89,6 +96,7 @@ h1,h2{
     align-content: center;
     margin: auto;
     background-color: white;
+    overflow: auto;
   }
 
   .main-content p{
@@ -181,6 +189,16 @@ h1,h2{
     h1,h2{
       font-size: 20px;
     }
+
+    .main-content p{
+      max-width: 80%;
+      margin-left:auto;
+      margin-right:auto;
+      text-align: center;
+    }
+    .change-footer{
+      position: relative;
+    }
   }
   @media (min-width:800px)
   {
@@ -206,8 +224,17 @@ h1,h2{
     #hamburger-menu{
       display: none;
     }
+
+    .site-footer{
+      position: fixed;
+    }
   }
 
   .visible-nav{
     display:block;
+  }
+
+  .mySlides{
+    height: 600x;
+    width: 720;
   }

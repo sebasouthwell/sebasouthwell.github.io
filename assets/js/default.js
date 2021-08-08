@@ -1,15 +1,19 @@
 "use strict";
 var navBar;
 var hamburgerMenu;
+var footer;
 window.addEventListener('load', function () {
     navBar = document.getElementById("page-nav-bar");
+    footer = this.document.getElementsByClassName("site-footer")[0];
     hamburgerMenu = document.getElementById("hamburger-menu").parentElement;
     hamburgerMenu.addEventListener("click",function(){
         if (navBar.classList.contains("visible-nav")){
             navBar.classList.remove("visible-nav");
+            footer.classList.remove("change-footer");
         }
         else{
             navBar.classList.add("visible-nav");
+            footer.classList.add("change-footer");
         }
     });
 })
