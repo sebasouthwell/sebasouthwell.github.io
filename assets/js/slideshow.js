@@ -4,7 +4,6 @@ var mySlides;
 var textContent;
 
 function moveDiv(n){
-    console.log(((slideIndex + n) % (mySlides.length)));
     showDivs(((slideIndex + n + mySlides.length) % (mySlides.length)));
 }
 
@@ -16,7 +15,6 @@ function showDivs(n){
     textContent.innerHTML = "";
     for (var x = 1; x < mySlides[n].children.length; x++){
         var clone = mySlides[n].children[x].cloneNode(true);
-        console.log(clone);
         textContent.appendChild(clone);
     }
     slideIndex=n;
