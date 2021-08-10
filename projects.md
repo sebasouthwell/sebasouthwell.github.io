@@ -44,7 +44,7 @@ description: Projects
           The project was originally built to help me in my studies revising for A-Levels at the time, and I had a base theory of how the program would work since 2017 where I was testing out random commands in Python. The program itself worked by asking user to make an account, where there information was stored on a server and then during pre-specified revision times, revision questions taloured towards the users information would then appear. In this revision time the user would be force to answer questions until the end of the session via background program detection which blocked specified programs, all Steam games and also web browsers depending on current window titles.
           <br>
           <br>
-          There is no official release of this system, and I plan to remake a more clean, efficient and aestetically pleasing version in the future.
+          There is no official release of this system, and I plan to remake a more clean, efficient and aesthetically pleasing version in the future.
           My A-Level demo is accessible for you to view via clicking the link below.
           </p>
           <br>
