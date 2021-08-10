@@ -4,14 +4,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html{
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-color: white;
 }
 
 #content{
   background-color: white;
   height: 100%;
 }
-h1,h2{
+h1,h2,h3{
   text-align: center;
 }
 .fa {
@@ -148,7 +148,16 @@ h1,h2{
     text-align: center;
     justify-content: center;
   }
-  
+  .text-content{
+    padding-bottom: 10%;
+  }
+
+  .mySlides img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
   nav ul li a{
     color: white;
     font-style: normal;
@@ -157,10 +166,14 @@ h1,h2{
     text-decoration: none;
   }
 
-  .all-content,html,body{
+  html{
     display: flex;
     flex-flow: column;
-    height: 100vh;
+    height: 100%;
+  }
+
+  body, .all-content{
+    min-height: 100%;
   }
   
   @media (max-width:800px) {
@@ -199,7 +212,17 @@ h1,h2{
     .change-footer{
       position: relative;
     }
+    .mySlides img{
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+    .text-content{
+      padding-bottom: 128px;
+    }
   }
+
   @media (min-width:800px)
   {
     .main-content p{
@@ -229,12 +252,31 @@ h1,h2{
       position: fixed;
     }
   }
-
   .visible-nav{
     display:block;
   }
 
-  .mySlides{
-    height: 600x;
-    width: 720;
+  .slideshow-container{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .mySlides p, .mySlides h3{
+    display: none;
+  }
+  .slide-button{
+    width: 10%;
+    -webkit-appearance: none;
+    color: white;
+    background-color: gray;
+  }
+  
+  .left-button{
+    left: 20%;
+  }
+
+  .right-button{
+    right: 20%;
   }
