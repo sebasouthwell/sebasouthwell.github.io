@@ -152,6 +152,11 @@ h1,h2,h3{
     padding-bottom: 10%;
   }
 
+  .mySlides{
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+  }
   .mySlides img{
     margin: auto;
     height: 100%;
@@ -221,6 +226,11 @@ h1,h2,h3{
     .text-content{
       padding-bottom: 128px;
     }
+
+    .solution-link{
+      height: 50%;
+      width: 50%
+    }
   }
 
   @media (min-width:800px)
@@ -251,6 +261,10 @@ h1,h2,h3{
     .site-footer{
       position: fixed;
     }
+    .solution-link{
+      height: 20%;
+      width: 20%
+    }
   }
   .visible-nav{
     display:block;
@@ -263,7 +277,7 @@ h1,h2,h3{
     display: flex;
   }
 
-  .mySlides p, .mySlides h3{
+  .mySlides .slide-info{
     display: none;
   }
   .slide-button{
@@ -279,4 +293,17 @@ h1,h2,h3{
 
   .right-button{
     right: 20%;
+  }
+  .solution-link{
+    display: block;
+    margin: auto;
+    background-color: gray;
+    border-radius: 20%;
+  }
+
+  .solution-url{
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    margin: auto;
   }

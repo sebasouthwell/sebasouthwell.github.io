@@ -1,0 +1,60 @@
+I"<h2 id="current-and-previous-projects">Current and Previous Projects</h2>
+
+<script src="/assets/js/slideshow.js"></script>
+
+<div class="slideshow-container">
+    <button class="slide-button button-left" onclick="moveDiv(-1)">&#10094;</button>
+    <div class="mySlides" style="display: block;">
+      <img src="/assets/images/AnyQueue.png" />
+      <div class="slide-info">
+        <br />
+        <h3>The AnyQueue Music System (Completed)</h3>
+        <h3>Built June 2021</h3>
+        <p>
+        The AnyQueue project, took me about 2 weeks maximum to put together. This version of system was built in Ruby / Sinatra using the Spotify API and was my second time doing full stack development for a big project. The AnyQueue Music System allowed for the creation of rooms for Spotify Premium users, where they would then get a room code and be able to share it to others. In the rooms people have their own nicknames and can add songs to the room owner's spotify queue via a custom search menu, a list of all user added songs is then visible in the main page. 
+        <br />
+        <br />
+        I originally built a much smaller version of this project about a month prior in C# which only allowed people to add my spotify queue, however realizing the possiblity for expansion I switched to Ruby due to my familiarity with the platform for full stack database management. The server itself is hosted on AWS and is currently in Spotify Development mode as I haven't flagged it for public release yet, meaning that only me and certain beta-testers can actually make accounts, apart from that though the system is finished.
+        <br />
+        <br />
+        The website is accessible for you to view via clicking the link below.
+        </p>
+        <br />
+        <a class="solution-url" href="http://anyqueue.sebasouthwell.co.uk">
+          <img class="solution-link" src="http://anyqueue.sebasouthwell.co.uk/images/AnyQueue_PageLogo.png" />
+          <p>Link to AnyQueue Music System</p>
+        </a>
+      </div>
+    </div>
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/eParent.png" />
+        <div class="slide-info">
+          <br />
+          <h3>The AnyQueue Music System (Completed)</h3>
+          <h3>Built June 2021</h3>
+          <p>
+          The AnyQueue project, took me about 2 weeks maximum to put together. This version of system was built in Ruby / Sinatra using the Spotify API and was my second time doing full stack development for a big project. The AnyQueue Music System allowed for the creation of rooms for Spotify Premium users, where they would then get a room code and be able to share it to others. In the rooms people have their own nicknames and can add songs to the room owner's spotify queue via a custom search menu, a list of all user added songs is then visible in the main page. 
+          <br />
+          <br />
+          I originally built a much smaller version of this project about a month prior in C# which only allowed people to add my spotify queue, however realizing the possiblity for expansion I switched to Ruby due to my familiarity with the platform for full stack database management. The server itself is hosted on AWS and is currently in Spotify Development mode as I haven't flagged it for public release yet, meaning that only me and certain beta-testers can actually make accounts, apart from that though the system is finished.
+          <br />
+          <br />
+          The website is accessible for you to view via clicking the link below.
+          </p>
+          <br />
+          <a class="solution-url" href="http://anyqueue.sebasouthwell.co.uk">
+            <img class="solution-link" src="http://anyqueue.sebasouthwell.co.uk/images/AnyQueue_PageLogo.png" />
+            <p>Link to AnyQueue Music System</p>
+          </a>
+      </div>
+    </div>    
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/AnyQueue.png" />
+    </div>
+    <button class="slide-button button-right" onclick="moveDiv(1)">&#10095;</button>
+</div>
+
+<div class="text-content">
+<div>
+</div></div>
+:ET

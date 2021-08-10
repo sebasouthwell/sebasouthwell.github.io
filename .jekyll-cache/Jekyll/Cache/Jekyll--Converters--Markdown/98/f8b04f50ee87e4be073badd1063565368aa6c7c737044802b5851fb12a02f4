@@ -1,0 +1,27 @@
+I"ô<h2 id="current-and-previous-projects">Current and Previous Projects</h2>
+
+<script src="/assets/js/slideshow.js"></script>
+
+<div class="slideshow-container">
+    <button class="slide-button button-left" onclick="moveDiv(-1)">&#10094;</button>
+    <div class="mySlides" style="display: block;">
+      <img src="/assets/images/AnyQueue.png" />
+
+    </div>
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/eParent.png" />
+      <p>
+      </p>
+    </div>    
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/AnyQueue.png" />
+      <p>
+      </p>
+    </div>
+    <button class="slide-button button-right" onclick="moveDiv(1)">&#10095;</button>
+</div>
+
+<div class="text-content">
+<div>
+</div></div>
+:ET
