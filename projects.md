@@ -26,7 +26,7 @@ description: Projects
         </p>
         <br>
         <a class="solution-url" href="http://anyqueue.sebasouthwell.co.uk">
-          <img class="solution-link" src="http://anyqueue.sebasouthwell.co.uk/images/AnyQueue_PageLogo.png">
+          <img class="solution-link" src="/assets/images/AnyQueue_PageLogo.png">
           <p>Link to AnyQueue Music System</p>
         </a>
       </div>
