@@ -1,0 +1,64 @@
+I"q<h2 id="current-and-previous-projects">Current and Previous Projects</h2>
+
+<script src="/assets/js/slideshow.js"></script>
+
+<div class="slideshow-container">
+    <button class="slide-button button-left" onclick="moveDiv(-1)">&#10094;</button>
+    <div class="mySlides" style="display: block;">
+      <img src="/assets/images/AnyQueue.png" />
+      <div class="slide-info">
+        <br />
+        <h3>The AnyQueue Music System (Completed)</h3>
+        <h3>Built June 2021</h3>
+        <p>
+        The AnyQueue project, took me about 2 weeks maximum to put together. This version of system was built in Ruby / Sinatra using the Spotify API and was my second time doing full stack development for a big project. The AnyQueue Music System allowed for the creation of rooms for Spotify Premium users, where they would then get a room code and be able to share it to others. In the rooms people have their own nicknames and can add songs to the room owner's spotify queue via a custom search menu, a list of all user added songs is then visible in the main page. 
+        <br />
+        <br />
+        I originally built a much smaller version of this project about a month prior in C# which only allowed people to add my spotify queue, however realizing the possiblity for expansion I switched to Ruby due to my familiarity with the platform for full stack database management. The server itself is hosted on AWS and is currently in Spotify Development mode as I haven't flagged it for public release yet, meaning that only me and certain beta-testers can actually make accounts, apart from that though the system is finished.
+        <br />
+        <br />
+        The website is accessible for you to view via clicking the link below.
+        </p>
+        <br />
+        <a class="solution-url" href="http://anyqueue.sebasouthwell.co.uk">
+          <img class="solution-link" src="/assets/images/AnyQueue_PageLogo.png" />
+          <p>Link to AnyQueue Music System</p>
+        </a>
+      </div>
+    </div>
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/eParent.png" />
+        <div class="slide-info">
+          <br />
+          <h3>The eParent Revision Monitor (Completed)</h3>
+          <h3>Built Nov 2019- Mar 2020</h3>
+          <p>
+          The eParent project, has been one of my longest overall projects so far (5 months in background), not because of how complicated the base system was itself but more in the lack of libraries used and where I had to make up the difference. This was my coursework for my A-Level Computer Science NEA (Non-exam assessment) where the use of libraries and focus towards appearance was discouraged to maximise marks for complex behaviour, and in doing so I went beyond this requirement such as creating my own RSA encryption for client-server communication.
+          <br />
+          <br />
+          The project was originally built to help me in my studies revising for A-Levels at the time, and I had a base theory of how the program would work since 2017 where I was testing out random commands in Python. The program itself worked by asking user to make an account, where there information was stored on a server and then during pre-specified revision times, revision questions taloured towards the users information would then appear. In this revision time the user would be force to answer questions until the end of the session via background program detection which blocked specified programs, all Steam games and also web browsers depending on current window titles.
+          <br />
+          <br />
+          There is no official release of this system, and I plan to remake a more clean, efficient and aesthetically pleasing version in the future.
+          My A-Level demo is accessible for you to view via clicking the link below.
+          </p>
+          <br />
+          <a class="solution-url" href="https://www.youtube.com/watch?v=G0OyCWsblZA">
+            <img class="solution-link" src="/assets/images/eParentLogo.png" />
+            <p>Link to Testing Demonstation</p>
+          </a>
+      </div>
+    </div>    
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/eMentor.png" />
+    </div>
+    <div class="mySlides" style="display: none;">
+      <img src="/assets/images/discordPhone.png" />
+    </div>
+    <button class="slide-button button-right" onclick="moveDiv(1)">&#10095;</button>
+</div>
+
+<div class="text-content">
+<div>
+</div></div>
+:ET

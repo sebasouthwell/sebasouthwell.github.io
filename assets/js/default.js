@@ -9,11 +9,11 @@ window.addEventListener('load', function () {
     hamburgerMenu.addEventListener("click",function(){
         if (navBar.classList.contains("visible-nav")){
             navBar.classList.remove("visible-nav");
-            footer.classList.remove("change-footer");
+            //footer.classList.remove("change-footer");
         }
         else{
             navBar.classList.add("visible-nav");
-            footer.classList.add("change-footer");
+            //footer.classList.add("change-footer");
         }
     });
 })
