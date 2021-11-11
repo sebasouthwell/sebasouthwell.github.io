@@ -92,6 +92,20 @@ description: Projects
           </p>
       </div>
     </div>
+	<div class="mySlides" style="display: none;">
+      <img src="/assets/images/ShefESH_Site.png" >
+        <div class="slide-info">
+          <br>
+          <h3>The Sheffield Ethical Student Hackers Society Website</h3>
+          <h3>Assisting with html,js and css changes when required</h3>
+          <p>
+          As Inclusions Officer for the Sheffield Ethical Student Hackers Society, I have to particapte in roles not just limited to inclusions but also that of a general committee member. During my time on committee so far, I've had to help design and present sessions teaching people the basics of Ethical Hacking as well as also making website changes when required. 
+          <br>
+          <br>
+		      As a commitee member I have make changes so far the meet the commitee page and fix formatting and introduce a fully functional hamburger menu (which after learning the skill I then implemented into this site) via the use of git and multiple branches.
+          <br>
+      </div>
+    </div>
     <button class="slide-button button-right" onclick="moveDiv(1)" >&#10095;</button>
 </div>
 
