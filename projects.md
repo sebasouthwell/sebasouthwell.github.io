@@ -25,7 +25,7 @@ description: Projects
         The website is accessible for you to view via clicking the link below.
         </p>
         <br>
-        <a class="solution-url" href="https://anyqueue.sebasouthwell.co.uk">
+        <a class="solution-url" href="http://anyqueue.sebasouthwell.co.uk">
           <img class="solution-link" src="/assets/images/AnyQueue_PageLogo.png">
           <p>Link to AnyQueue Music System</p>
         </a>
