@@ -4,7 +4,7 @@ title: Sebastian Southwell
 description: ...
 ---
 
-
+<div>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -36,3 +36,4 @@ description: ...
   scope="public_profile,email"
   onlogin="checkLoginState();">
 </fb:login-button>
+</div>
