@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var professionPills = document.querySelectorAll('.portfolio-profession-pill');
   var items = document.querySelectorAll('.portfolio-flex-item');
   var emptyState = document.getElementById('portfolioEmptyState');
-  var cvLink = document.getElementById('cvLink');
+  var cvLinks = document.querySelectorAll('[data-profession-cv]');
 
   var flexRow = document.getElementById('portfolioFlexRow');
   var showMoreRow = document.getElementById('portfolioShowMoreRow');
@@ -122,10 +122,11 @@ document.addEventListener('DOMContentLoaded', function () {
           });
         }
 
-        if (cvLink) {
-          var key = profession.toLowerCase();
-          cvLink.setAttribute('href', CV_BY_PROFESSION[key] || CV_BY_PROFESSION.all);
-        }
+        var key = profession.toLowerCase();
+        var cvHref = CV_BY_PROFESSION[key] || CV_BY_PROFESSION.all;
+        cvLinks.forEach(function (link) {
+          link.setAttribute('href', cvHref);
+        });
 
         updateEducationVariant(profession);
       });
