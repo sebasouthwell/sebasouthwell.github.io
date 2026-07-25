@@ -8,3 +8,5 @@ vendor/
 .bundle/config.local-fixBranch
 
 Gemfile.lock
+
+.portfolio-editor-backups/

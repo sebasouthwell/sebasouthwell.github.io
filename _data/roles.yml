@@ -1,0 +1,51 @@
+- org: UK Home Office
+  visible: true
+  roles:
+    - title: DevOps Engineer (SEO)
+      dates: Dec 2025 - Present
+      description: Leading migration of the team's development environment between Cloud IDEs — experimenting with and implementing a solution alongside a cloud platform representative. Onboarding various new applications into our primary infrastructure, configuring them and proving value while working closely with stakeholders.
+    - title: Associate DevOps Engineer
+      dates: Feb 2024 - Dec 2025
+      description: Implemented a PrivateLink for high-traffic network infrastructure, reducing unnecessary data transit. Built dynamically reproducible, interconnected networks with Terraform and Packer at the request of an internal team, ensuring fit for requirements and developing a proof of concept. Created permission-auditing scripts to help enforce a zero-trust policy across our services and team resources. Sat on interview panels and mentored junior engineers.
+    - title: Apprentice Developer
+      dates: Sept 2022 - Feb 2024
+      description: Working with a senior engineer, built an autoscaling data forwarder handling 2,000+ events per second. Produced a VPN connection automation script that reduced on-device connection and setup time for engineers. Contributed to a government backend project modernising certificates and records, working with QA and following quality review processes.
+- org: The Catalyst
+  visible: false
+  roles:
+    - title: Marketing Officer
+      dates: Nov 2022 - Jan 2024
+      description: Built a front-end website in Jekyll on GitHub Pages for dynamic display and easy modification, and wrote documentation in LaTeX.
+- org: Societies Committee (Sheffield Students' Union)
+  visible: false
+  roles:
+    - title: Technical Systems Officer
+      dates: Aug 2022 - May 2023
+      description: Built digital solutions to increase interactivity between the societies committee and the public via tools like Apps Script, automating publicity such as emails via scripting. Used Canva for announcements and HitFilm Express for an animated awards short. General committee member voting on funding and other matters.
+    - title: Media &amp; Technology Societies Liaison
+      dates: Feb 2022 - Aug 2022
+      description: Liaison for media and tech societies and general committee member; assisted with setup and announcing at the activities awards.
+- org: Sheffield Ethical Student Hackers
+  visible: false
+  roles:
+    - title: Secretary
+      dates: May 2022 - Nov 2022
+      description: ''
+    - title: Inclusions Officer
+      dates: Sept 2021 - 2022
+      description: Co-delivered weekly cybersecurity sessions to groups of around 10 students, teaching responsible use alongside both offensive and defensive techniques including web scraping, SQL injection and ethical hacking. Created challenges and lesson plans for sessions, and ensured they were accessible across all skill levels — alongside a general committee role covering session planning and website development with git.
+- org: Project Hex
+  visible: false
+  roles:
+    - title: Lead Imaging Systems Engineer
+      dates: Mar 2022 - Nov 2022
+      description: ''
+    - title: Imaging Systems Engineer
+      dates: Oct 2021 - Mar 2022
+      description: Student-led engineering project competing in the US SUAS competition. Handled and formatted data sets in an automated fashion for compatibility, and researched TensorFlow models for use on a UAV with an onboard Jetson Nano.
+- org: Sheffield CompSoc
+  visible: false
+  roles:
+    - title: Technical Events Officer
+      dates: 2021 - 2022
+      description: Designed and delivered a Python for Beginners workshop and a C++ for Beginners workshop to undergraduate audiences, with the C++ workshop being an original initiative. Organised two Year in Industry workshops, coordinating speakers and logistics, and assisted students hands-on throughout sessions, adapting to last-minute changes and absences.

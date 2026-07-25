@@ -9,105 +9,44 @@
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
+        {% for org in site.data.roles %}
+        {% if org.visible %}
         <div class="roles-group">
-          <h3 class="roles-org">UK Home Office</h3>
+          <h3 class="roles-org">{{ org.org }}</h3>
+          {% for role in org.roles %}
           <div class="roles-entry">
             <div class="roles-entry-header">
-              <span class="roles-title">DevOps Engineer (SEO)</span>
-              <span class="roles-dates">Dec 2025 - Present</span>
+              <span class="roles-title">{{ role.title }}</span>
+              <span class="roles-dates">{{ role.dates }}</span>
             </div>
-            <p>Leading migration of the team's development environment between Cloud IDEs — experimenting with and implementing a solution alongside a cloud platform representative. Onboarding various new applications into our primary infrastructure, configuring them and proving value while working closely with stakeholders.</p>
+            {% if role.description != '' %}
+            <p>{{ role.description }}</p>
+            {% endif %}
           </div>
-          <div class="roles-entry">
-            <div class="roles-entry-header">
-              <span class="roles-title">Associate DevOps Engineer</span>
-              <span class="roles-dates">Feb 2024 - Dec 2025</span>
-            </div>
-            <p>Implemented a PrivateLink for high-traffic network infrastructure, reducing unnecessary data transit. Built dynamically reproducible, interconnected networks with Terraform and Packer at the request of an internal team, ensuring fit for requirements and developing a proof of concept. Created permission-auditing scripts to help enforce a zero-trust policy across our services and team resources. Sat on interview panels and mentored junior engineers.</p>
-          </div>
-          <div class="roles-entry">
-            <div class="roles-entry-header">
-              <span class="roles-title">Apprentice Developer</span>
-              <span class="roles-dates">Sept 2022 - Feb 2024</span>
-            </div>
-            <p>Working with a senior engineer, built an autoscaling data forwarder handling 2,000+ events per second. Produced a VPN connection automation script that reduced on-device connection and setup time for engineers. Contributed to a government backend project modernising certificates and records, working with QA and following quality review processes.</p>
-          </div>
+          {% endfor %}
         </div>
+        {% endif %}
+        {% endfor %}
 
         <div id="rolesMore" hidden>
+          {% for org in site.data.roles %}
+          {% unless org.visible %}
           <div class="roles-group">
-            <h3 class="roles-org">The Catalyst</h3>
+            <h3 class="roles-org">{{ org.org }}</h3>
+            {% for role in org.roles %}
             <div class="roles-entry">
               <div class="roles-entry-header">
-                <span class="roles-title">Marketing Officer</span>
-                <span class="roles-dates">Nov 2022 - Jan 2024</span>
+                <span class="roles-title">{{ role.title }}</span>
+                <span class="roles-dates">{{ role.dates }}</span>
               </div>
-              <p>Built a front-end website in Jekyll on GitHub Pages for dynamic display and easy modification, and wrote documentation in LaTeX.</p>
+              {% if role.description != '' %}
+              <p>{{ role.description }}</p>
+              {% endif %}
             </div>
+            {% endfor %}
           </div>
-
-          <div class="roles-group">
-            <h3 class="roles-org">Societies Committee (Sheffield Students' Union)</h3>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Technical Systems Officer</span>
-                <span class="roles-dates">Aug 2022 - May 2023</span>
-              </div>
-              <p>Built digital solutions to increase interactivity between the societies committee and the public via tools like Apps Script, automating publicity such as emails via scripting. Used Canva for announcements and HitFilm Express for an animated awards short. General committee member voting on funding and other matters.</p>
-            </div>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Media &amp; Technology Societies Liaison</span>
-                <span class="roles-dates">Feb 2022 - Aug 2022</span>
-              </div>
-              <p>Liaison for media and tech societies and general committee member; assisted with setup and announcing at the activities awards.</p>
-            </div>
-          </div>
-
-          <div class="roles-group">
-            <h3 class="roles-org">Sheffield Ethical Student Hackers</h3>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Secretary</span>
-                <span class="roles-dates">May 2022 - Nov 2022</span>
-              </div>
-            </div>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Inclusions Officer</span>
-                <span class="roles-dates">Sept 2021 - 2022</span>
-              </div>
-              <p>Co-delivered weekly cybersecurity sessions to groups of around 10 students, teaching responsible use alongside both offensive and defensive techniques including web scraping, SQL injection and ethical hacking. Created challenges and lesson plans for sessions, and ensured they were accessible across all skill levels — alongside a general committee role covering session planning and website development with git.</p>
-            </div>
-          </div>
-
-          <div class="roles-group">
-            <h3 class="roles-org">Project Hex</h3>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Lead Imaging Systems Engineer</span>
-                <span class="roles-dates">Mar 2022 - Nov 2022</span>
-              </div>
-            </div>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Imaging Systems Engineer</span>
-                <span class="roles-dates">Oct 2021 - Mar 2022</span>
-              </div>
-              <p>Student-led engineering project competing in the US SUAS competition. Handled and formatted data sets in an automated fashion for compatibility, and researched TensorFlow models for use on a UAV with an onboard Jetson Nano.</p>
-            </div>
-          </div>
-
-          <div class="roles-group">
-            <h3 class="roles-org">Sheffield CompSoc</h3>
-            <div class="roles-entry">
-              <div class="roles-entry-header">
-                <span class="roles-title">Technical Events Officer</span>
-                <span class="roles-dates">2021 - 2022</span>
-              </div>
-              <p>Designed and delivered a Python for Beginners workshop and a C++ for Beginners workshop to undergraduate audiences, with the C++ workshop being an original initiative. Organised two Year in Industry workshops, coordinating speakers and logistics, and assisted students hands-on throughout sessions, adapting to last-minute changes and absences.</p>
-            </div>
-          </div>
+          {% endunless %}
+          {% endfor %}
         </div>
 
         <div class="roles-toggle-row">

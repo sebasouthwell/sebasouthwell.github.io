@@ -10,13 +10,15 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <div class="certs-row">
+          {% for cert in site.data.certifications %}
           <div class="cert-card">
-            <i class="fa-brands fa-aws"></i>
-            <span class="cert-name">AWS Certified Cloud Practitioner</span>
-            <span class="cert-desc">Foundational certification covering core AWS services, cloud architecture and security best practices.</span>
-            <span class="cert-code">CLF-C02</span>
-            <span class="cert-dates">2024 &ndash; 2027</span>
+            <i class="{{ cert.icon }}"></i>
+            <span class="cert-name">{{ cert.name }}</span>
+            <span class="cert-desc">{{ cert.description }}</span>
+            <span class="cert-code">{{ cert.code }}</span>
+            <span class="cert-dates">{{ cert.dates }}</span>
           </div>
+          {% endfor %}
         </div>
       </div>
     </div>
