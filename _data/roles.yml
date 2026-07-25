@@ -15,37 +15,37 @@
   roles:
     - title: Marketing Officer
       dates: Nov 2022 - Jan 2024
-      description: Built a front-end website in Jekyll on GitHub Pages for dynamic display and easy modification, and wrote documentation in LaTeX.
+      description: <p>Built a front-end website in Jekyll on GitHub Pages for dynamic display and easy modification, and wrote documentation in LaTeX. Performed and tracked performance of social media posts, and also initiating automatic stat monitoring using LinkedIn and Instagram API.</p>
 - org: Societies Committee (Sheffield Students' Union)
   visible: false
   roles:
     - title: Technical Systems Officer
       dates: Aug 2022 - May 2023
-      description: Built digital solutions to increase interactivity between the societies committee and the public via tools like Apps Script, automating publicity such as emails via scripting. Used Canva for announcements and HitFilm Express for an animated awards short. General committee member voting on funding and other matters.
+      description: <p>Built digital solutions to increase interactivity between the societies committee and the public via tools like Apps Script, automating publicity such as emails via scripting. </p><p>Used Canva for announcements and HitFilm Express for an animated awards short. General committee member voting on funding and other matters.</p><p>Created an automatic bin-packing inspired script that would allow for the efficient placement of many individuals on the DYSO University barcrawl of which there were 2000 attendees with various societies, requiring optimal route placement both for walking distance and the bar capacities.</p>
     - title: Media &amp; Technology Societies Liaison
       dates: Feb 2022 - Aug 2022
-      description: Liaison for media and tech societies and general committee member; assisted with setup and announcing at the activities awards.
+      description: <p>Liaison for media and tech societies and general committee member; assisted with setup and announcing at the activities awards. Voted and attended regular meetings to decide funding allocations, and <br><br>Spoke on stage and presented awards, while also acting as stage-wrangler, assisting in the setup and management of the university annual society award ceremony.</p>
 - org: Sheffield Ethical Student Hackers
   visible: false
   roles:
     - title: Secretary
       dates: May 2022 - Nov 2022
-      description: ''
+      description: <p>Attended regular meetings, assisted with presentations and assisting existing committee members, while also actively taking minutes in meetings, and controlling room bookings.</p>
     - title: Inclusions Officer
       dates: Sept 2021 - 2022
-      description: Co-delivered weekly cybersecurity sessions to groups of around 10 students, teaching responsible use alongside both offensive and defensive techniques including web scraping, SQL injection and ethical hacking. Created challenges and lesson plans for sessions, and ensured they were accessible across all skill levels — alongside a general committee role covering session planning and website development with git.
+      description: <p>Co-delivered weekly cybersecurity sessions to groups of around 10 students, teaching responsible use alongside both offensive and defensive techniques including web scraping, SQL injection and ethical hacking. </p><p></p><p>Created challenges and lesson plans for sessions, and ensured they were accessible across all skill levels, alongside a general committee role covering session planning and website development with git. Worked with AWS, maintained their professional website and performed updates, while also writing capture the flag challenges for our annual competition.</p>
 - org: Project Hex
   visible: false
   roles:
     - title: Lead Imaging Systems Engineer
       dates: Mar 2022 - Nov 2022
-      description: ''
+      description: <p>Managed and instructed a team of 4-5 different engineers, working on a drone project for the US SUAS competition. Attended regular management meetings, and gave timeline and Gantt chart updates while also acting as a panel member for interviews, assessing technical ability of candidates. </p>
     - title: Imaging Systems Engineer
       dates: Oct 2021 - Mar 2022
-      description: Student-led engineering project competing in the US SUAS competition. Handled and formatted data sets in an automated fashion for compatibility, and researched TensorFlow models for use on a UAV with an onboard Jetson Nano.
+      description: <p>Student-led engineering project competing in the US SUAS competition. Handled and formatted data sets in an automated fashion for compatibility, and researched TensorFlow models for use on a UAV with an onboard Jetson Nano.</p>
 - org: Sheffield CompSoc
   visible: false
   roles:
     - title: Technical Events Officer
       dates: 2021 - 2022
-      description: Designed and delivered a Python for Beginners workshop and a C++ for Beginners workshop to undergraduate audiences, with the C++ workshop being an original initiative. Organised two Year in Industry workshops, coordinating speakers and logistics, and assisted students hands-on throughout sessions, adapting to last-minute changes and absences.
+      description: <p>Designed and delivered a Python for Beginners workshop and a C++ for Beginners workshop to undergraduate audiences, with the C++ workshop being an original initiative. Organised two Year in Industry workshops, coordinating speakers and logistics, and assisted students hands-on throughout sessions, adapting to last-minute changes and absences.<br><br>Judged, assisted, planned and managed the University of Sheffield ShefJam 8 competition, a 42 hour game development competition and contributed to the round-the-clock safety and event management of the competition working in shifts.</p>

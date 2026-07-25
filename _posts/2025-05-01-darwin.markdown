@@ -3,32 +3,25 @@ layout: default
 modal-id: 7
 weight: 30
 title: Darwin — Graph-Verified RAG Assistant for BDUK
-date: 2025-05-01
+date: '2025-05-01'
 img: Darwin.png
 alt: Architecture diagram of Darwin's multimodal pre-processing pipeline — CLIP embeddings, S3 storage buckets and a knowledge-graph generator feeding a shared vector database
 project-date: Oct 2024 - May 2025
 client: Building Digital UK (BDUK)
-award: 'Uni: First Class'
 category: University
-profession: [AI, Software Engineering, Back-End, DevOps]
-tags: [Python, AWS, Neo4j, LangChain, RAG, ChromaDB, Group Project]
-description: >
-  A two-semester, masters-level group research project (COM4520) with an
-  external client, government body Building Digital UK, tackling
-  hallucinations in multi-modal LLMs over real government documents. I led
-  the system architecture (see the
-  pre-processing pipeline diagram): documents land in S3, get split into
-  multimodal elements, and are embedded two ways — locally via CLIP
-  (concatenated text+image vectors in ChromaDB) and via cloud Bedrock Titan
-  multimodal embeddings — while an LLM-driven graph transformer extracts
-  entities and relationships into a Neo4j knowledge graph. At query time,
-  structured graph traversal is combined with vector similarity search
-  (hybrid retrieval), so answers are cross-checked against explicit
-  entity-relationship evidence rather than embeddings alone. The
-  architecture is provider-agnostic by design — a model catalogue swaps
-  between OpenAI, Bedrock (Claude, Llama 3, Mistral), Gemini, xAI and local
-  Ollama models (DeepSeek R1, LLaVA, Qwen2.5) — and every configuration was
-  scored with BERTScore and ROUGE-L across 275 benchmark runs. Delivered
-  with a pytest suite, GitHub Actions CI/CD with Discord build
-  notifications, and secure credential handling throughout (74%).
+profession:
+  - AI
+  - Software Engineering
+  - Back-End
+  - DevOps
+tags:
+  - Python
+  - AWS
+  - Neo4j
+  - LangChain
+  - RAG
+  - ChromaDB
+  - Group Project
+description: '<p>A two-semester, masters-level group research project (COM4520) with an external client, government body Building Digital UK, tackling hallucinations in multi-modal LLMs over real government documents. I led the system architecture (see the pre-processing pipeline diagram): documents land in S3, get split into multimodal elements, and are embedded two ways — locally via CLIP (concatenated text+image vectors in ChromaDB) and via cloud Bedrock Titan multimodal embeddings — while an LLM-driven graph transformer extracts entities and relationships into a Neo4j knowledge graph. At query time, structured graph traversal is combined with vector similarity search (hybrid retrieval), so answers are cross-checked against explicit entity-relationship evidence rather than embeddings alone. The architecture is provider-agnostic by design — a model catalogue swaps between OpenAI, Bedrock (Claude, Llama 3, Mistral), Gemini, xAI and local Ollama models (DeepSeek R1, LLaVA, Qwen2.5) — and every configuration was scored with BERTScore and ROUGE-L across 275 benchmark runs. Delivered with a pytest suite, GitHub Actions CI/CD with Discord build notifications, and secure credential handling throughout (74%).</p>'
+award: 'Uni: First Class'
 ---
