@@ -62,8 +62,30 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (form && successEl && errorEl) {
+    ['name', 'message'].forEach(function (fieldId) {
+      var field = form.querySelector('#' + fieldId);
+      if (!field) return;
+      field.addEventListener('input', function () {
+        field.setCustomValidity('');
+      });
+    });
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      var nameField = form.querySelector('#name');
+      var messageField = form.querySelector('#message');
+      if (nameField && !nameField.value.trim()) {
+        nameField.setCustomValidity('Please enter your name.');
+      }
+      if (messageField && !messageField.value.trim()) {
+        messageField.setCustomValidity('Please enter a message.');
+      }
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
       errorEl.hidden = true;
 
       var submitBtn = form.querySelector('button[type="submit"]');

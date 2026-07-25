@@ -1208,6 +1208,19 @@ footer .footer-below {
     gap: 8px;
 }
 
+.contact-required-note {
+    margin: 0 0 10px;
+    color: #777;
+    font-size: 12px;
+    text-align: right;
+}
+
+.required-marker,
+.contact-required-note span {
+    color: #a32424;
+    font-weight: 700;
+}
+
 .contact-popup-actions .btn {
     width: 100%;
     min-height: 48px;
