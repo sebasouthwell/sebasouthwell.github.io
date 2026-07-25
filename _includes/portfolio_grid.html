@@ -9,7 +9,10 @@
     </div>
 
     {% assign professions = "DevOps,Software Engineering,AI,Hardware,Full-Stack,Front-End,Back-End,Mobile Development" | split: "," %}
-    <div class="portfolio-profession-row" role="group" aria-label="Filter by profession">
+    <p class="portfolio-profession-note" id="portfolioProfessionNote">
+      Choose a profession to tailor the projects shown, switch Academic Experience to the most relevant expertise, and update the CV link to the matching profession-specific version.
+    </p>
+    <div class="portfolio-profession-row" role="group" aria-label="Filter by profession" aria-describedby="portfolioProfessionNote">
       <button type="button" class="portfolio-profession-pill active" data-profession-filter="all">All</button>
       {% for profession in professions %}
       <button type="button" class="portfolio-profession-pill" data-profession-filter="{{ profession }}">{{ profession }}</button>

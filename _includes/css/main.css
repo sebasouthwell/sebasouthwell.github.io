@@ -841,6 +841,22 @@ section.success {
     margin: 0 0 16px;
 }
 
+.portfolio-profession-note {
+    max-width: 720px;
+    margin: 0 auto 14px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .portfolio-profession-note {
+        padding: 0 8px;
+        font-size: 13px;
+    }
+}
+
 .portfolio-profession-pill {
     border: none;
     border-radius: 999px;
