@@ -390,6 +390,16 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header .intro-text .tagline {
+    display: block;
+    margin-top: 6px;
+    font-size: .8em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
 @media(min-width:768px) {
     header .container .row {
         padding-bottom: 100px;
@@ -401,6 +411,10 @@ header .intro-text .skills {
 
     .intro-text .skills {
         font-size: 1.75em;
+    }
+
+    .intro-text .tagline {
+        font-size: 1.05em;
     }
 
     .intro-text .socials {
@@ -951,6 +965,16 @@ footer .footer-col {
     margin-bottom: 50px;
 }
 
+footer .footer-col a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .footer-col a:hover,
+footer .footer-col a:focus {
+    color: #ddd;
+}
+
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.secondary-dark }};
@@ -1162,20 +1186,41 @@ footer .footer-below {
     background: rgba(0, 0, 0, .06);
 }
 
-.contact-popup-panel .btn-success {
+.contact-popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-popup-actions .btn {
+    width: 100%;
     min-height: 48px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 8px;
     font-size: 16px;
     font-weight: 700;
+}
+
+.contact-popup-actions .btn-success {
     background: var(--purple);
     border-color: var(--purple);
 }
 
-.contact-popup-panel .btn-success:hover,
-.contact-popup-panel .btn-success:focus {
+.contact-popup-actions .btn-success:hover,
+.contact-popup-actions .btn-success:focus {
     background: #40174a;
     border-color: #40174a;
+}
+
+.contact-popup-actions .btn-default {
+    background: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+
+.contact-popup-actions .btn-default:hover,
+.contact-popup-actions .btn-default:focus {
+    background: #f5f5f5;
+    border-color: #aaa;
 }
 
 .contact-popup-panel .form-group {

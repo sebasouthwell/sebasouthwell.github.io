@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('contactForm');
   var successEl = document.getElementById('contactPopupSuccess');
   var errorEl = document.getElementById('contactPopupError');
+  var emailBtn = document.getElementById('contactPopupEmailBtn');
 
   if (!toggle || !panel) return;
 
@@ -48,6 +49,17 @@ document.addEventListener('DOMContentLoaded', function () {
     if (panel.contains(e.target) || toggle.contains(e.target)) return;
     closePanel();
   });
+
+  if (emailBtn && form) {
+    emailBtn.addEventListener('click', function () {
+      var name = form.querySelector('#name').value.trim();
+      var message = form.querySelector('#message').value.trim();
+      var subject = name ? 'Portfolio enquiry from ' + name : 'Portfolio enquiry';
+      var mailto = 'mailto:' + emailBtn.dataset.email + '?subject=' + encodeURIComponent(subject);
+      if (message) mailto += '&body=' + encodeURIComponent(message);
+      emailBtn.setAttribute('href', mailto);
+    });
+  }
 
   if (form && successEl && errorEl) {
     form.addEventListener('submit', function (e) {

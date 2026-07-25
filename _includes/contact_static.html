@@ -35,7 +35,14 @@
         <p class="help-block text-danger"></p>
         <span class="contact-popup-help">e.g. "Hi Sebastian, I'm hiring for a DevOps role and wanted to ask about your AWS experience."</span>
       </div>
-      <button type="submit" class="btn btn-success btn-block">Send</button>
+      <div class="contact-popup-actions">
+        <button type="submit" class="btn btn-success">
+          <i class="fa fa-solid fa-bolt"></i> Send Instant DM
+        </button>
+        <a href="mailto:{{ site.email }}" class="btn btn-default" id="contactPopupEmailBtn" data-email="{{ site.email }}">
+          <i class="fa fa-solid fa-envelope"></i> Email Instead
+        </a>
+      </div>
     </form>
 
     <div class="contact-popup-success" id="contactPopupSuccess" hidden>
