@@ -22,8 +22,7 @@ tags:
   - 3D Graphics
   - Scene Graph
 description: >-
-  <p>Here is the revised version with the mathematical, rendering, and animation
-  work brought forward more clearly:</p><p>A from-scratch 3D scene developed in
+  <p>A from-scratch 3D scene developed in
   Java with JOGL, the Java bindings for OpenGL, for COM4503. Rather than relying
   on a ready-made framework, I designed and implemented my own hierarchical
   scene-graph engine for managing geometry, transformations, animation,

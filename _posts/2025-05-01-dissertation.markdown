@@ -7,7 +7,7 @@ date: '2025-05-01'
 img: Dissertation.png
 alt: >-
   Fritzing-style design figure of the unPhone touchscreen device wired to a
-  breadboard, showing an "Audio Detected: Streaming to API Server" UI mockup
+  breadboard, showing an Audio Detected — Streaming to API Server UI mockup
 project-date: Oct 2024 - May 2025
 client: University of Sheffield (Dissertation)
 category: University
@@ -24,7 +24,7 @@ tags:
   - Speech Processing
   - LLMs
 description: >-
-  <p>Here is a more polished and clearly structured version:</p><p>My final-year
+  <p>My final-year
   dissertation, supervised by Professor Hamish Cunningham, focused on the
   development of a physical smart-home voice assistant using the University of
   Sheffield’s unPhone hardware platform. The device was ESP32-based and included

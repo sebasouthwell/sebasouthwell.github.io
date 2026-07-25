@@ -5,7 +5,7 @@ weight: 110
 title: Harry Potter Character Matcher & Prank Call
 date: 2022-11-06
 img: PotterPrankCall.jpg
-alt: Screenshot of the Harry Potter character-matching app's upload screen, asking "What would I be in Harry Potter movie?"
+alt: Screenshot of the Harry Potter character-matching app's upload screen, asking what character I would be in the Harry Potter movies
 project-date: Nov 2022
 client: HackSheffield 7
 award: Hackathon Winner

@@ -393,11 +393,12 @@ header .intro-text .skills {
 header .intro-text .tagline {
     display: block;
     margin-top: 6px;
-    font-size: .8em;
-    font-weight: 300;
+    font-size: .85em;
+    font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
-    opacity: .8;
+    color: rgba(255, 255, 255, .92);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 @media(min-width:768px) {
@@ -696,6 +697,12 @@ section.success {
     display: flex;
     justify-content: center;
     margin: 0 0 25px;
+}
+
+@media (max-width: 767px) {
+    #portfolio .portfolio-filter-row {
+        display: none;
+    }
 }
 
 /* Searchable select ("combobox") for advanced project specifications */

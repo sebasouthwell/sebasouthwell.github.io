@@ -26,8 +26,7 @@ tags:
   - ChromaDB
   - Group Project
 description: >-
-  <p>Updated to include the Streamlit demonstrator and presentation
-  work:</p><p>A two-semester, master’s-level group research project for COM4520,
+  <p>A two-semester, master’s-level group research project for COM4520,
   completed in collaboration with the government body Building Digital UK. The
   project investigated methods for reducing hallucinations in large language
   models and enabling government data to be used in a reliable, secure, and

@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var professionPills = document.querySelectorAll('.portfolio-profession-pill');
   var items = document.querySelectorAll('.portfolio-flex-item');
   var emptyState = document.getElementById('portfolioEmptyState');
-  var cvLinks = document.querySelectorAll('[data-profession-cv]');
-  var cvChoices = document.querySelectorAll('[data-cv-choice]');
 
   var flexRow = document.getElementById('portfolioFlexRow');
   var showMoreRow = document.getElementById('portfolioShowMoreRow');
@@ -18,20 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var chipClear = document.getElementById('portfolioSelectClear');
 
   if (!items.length) return;
-
-  // Profession -> CV file. All point at the one real CV today;
-  // swap in profession-specific files here as they're written.
-  var CV_BY_PROFESSION = {
-    all: '/files/SasCV.pdf',
-    devops: '/files/SasCV.pdf',
-    'software engineering': '/files/SasCV.pdf',
-    ai: '/files/SasCV.pdf',
-    hardware: '/files/SasCV.pdf',
-    'full-stack': '/files/SasCV.pdf',
-    'front-end': '/files/SasCV.pdf',
-    'back-end': '/files/SasCV.pdf',
-    'mobile development': '/files/SasCV.pdf',
-  };
 
   function updateEmptyState() {
     if (!emptyState) return;
@@ -123,26 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
           });
         }
 
-        var key = profession.toLowerCase();
-        var cvHref = CV_BY_PROFESSION[key] || CV_BY_PROFESSION.all;
-        var cvLabel = profession === 'all' ? 'CV' : profession + ' CV';
-        cvLinks.forEach(function (link) {
-          link.setAttribute('href', cvHref);
-          link.setAttribute('aria-label', cvLabel);
-          link.setAttribute('title', cvLabel);
-          if (link.hasAttribute('data-cv-nav-label')) {
-            link.textContent = cvLabel;
-          }
-          var icon = link.querySelector('#fa-3');
-          if (icon) {
-            icon.setAttribute('aria-label', cvLabel);
-            icon.setAttribute('title', cvLabel);
-          }
-        });
-        cvChoices.forEach(function (choice) {
-          choice.classList.toggle('selected', choice.getAttribute('data-cv-choice') === key);
-        });
-
         updateEducationVariant(profession);
       });
     });
@@ -207,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
       closeListbox();
 
       resetProfessionPills();
-      if (cvLink) cvLink.setAttribute('href', CV_BY_PROFESSION.all);
       updateEducationVariant('all');
       setShowMoreForDefaultView(false);
 
