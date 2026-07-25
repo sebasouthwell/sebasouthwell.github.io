@@ -119,7 +119,7 @@ nav{
 }
 
 .logo{
-    background-image: url("https://cdn.discordapp.com/avatars/361509431906795530/60a221441b13992d84fbedba9ecea2f5.webp?size=1024");
+    background-image: url("/img/logo.png");
     background-position: center;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
