@@ -5,7 +5,10 @@ weight: 30
 title: Darwin — Graph-Verified RAG Assistant for BDUK
 date: '2025-05-01'
 img: Darwin.png
-alt: Architecture diagram of Darwin's multimodal pre-processing pipeline — CLIP embeddings, S3 storage buckets and a knowledge-graph generator feeding a shared vector database
+alt: >-
+  Architecture diagram of Darwin's multimodal pre-processing pipeline — CLIP
+  embeddings, S3 storage buckets and a knowledge-graph generator feeding a
+  shared vector database
 project-date: Oct 2024 - May 2025
 client: Building Digital UK (BDUK)
 category: University
@@ -22,6 +25,56 @@ tags:
   - RAG
   - ChromaDB
   - Group Project
-description: '<p>A two-semester, masters-level group research project (COM4520) with an external client, government body Building Digital UK, tackling hallucinations in multi-modal LLMs over real government documents. I led the system architecture (see the pre-processing pipeline diagram): documents land in S3, get split into multimodal elements, and are embedded two ways — locally via CLIP (concatenated text+image vectors in ChromaDB) and via cloud Bedrock Titan multimodal embeddings — while an LLM-driven graph transformer extracts entities and relationships into a Neo4j knowledge graph. At query time, structured graph traversal is combined with vector similarity search (hybrid retrieval), so answers are cross-checked against explicit entity-relationship evidence rather than embeddings alone. The architecture is provider-agnostic by design — a model catalogue swaps between OpenAI, Bedrock (Claude, Llama 3, Mistral), Gemini, xAI and local Ollama models (DeepSeek R1, LLaVA, Qwen2.5) — and every configuration was scored with BERTScore and ROUGE-L across 275 benchmark runs. Delivered with a pytest suite, GitHub Actions CI/CD with Discord build notifications, and secure credential handling throughout (74%).</p>'
+description: >-
+  <p>Updated to include the Streamlit demonstrator and presentation
+  work:</p><p>A two-semester, master’s-level group research project for COM4520,
+  completed in collaboration with the government body Building Digital UK. The
+  project investigated methods for reducing hallucinations in large language
+  models and enabling government data to be used in a reliable, secure, and
+  informative way for employees.</p><p>Due to unforeseen circumstances, the team
+  was without an academic supervisor during the first semester. I therefore
+  assumed a leading role within the group, helping to define the project scope,
+  establish the research direction, and coordinate the investigation. I led the
+  system architecture and focused my research on agentic approaches, retrieval
+  techniques, and output-verification strategies.</p><p>We evaluated a wide
+  range of variables, including embedding models, language models, retrieval
+  methods, preprocessing strategies, and verification techniques. As part of
+  this work, we devised a custom verification method inspired by knowledge
+  graphs and logical axioms. The approach aimed to decompose source documents
+  into objective statements that could be compared against generated answers,
+  providing a structured method for identifying unsupported claims.</p><p>The
+  final system consisted of separate preprocessing and query-time pipelines.
+  During preprocessing, documents were uploaded to Amazon S3, divided into
+  multimodal elements, and prepared for retrieval. Infrastructure was
+  provisioned using Terraform and AWS, with secure, least-privilege access to
+  Amazon Bedrock. Preprocessing reduced query latency and token consumption by
+  completing computationally intensive work before user requests were
+  received.</p><p>Content was embedded using two approaches. Local CLIP
+  embeddings combined textual and visual information within ChromaDB, while
+  Amazon Bedrock Titan generated cloud-based multimodal embeddings. Video and
+  audio content could also be processed, transcribed, and incorporated into the
+  retrieval system. In parallel, an LLM-based graph transformer extracted
+  entities and relationships into a Neo4j knowledge graph.</p><p>At query time,
+  the system combined vector similarity search with structured graph traversal.
+  This hybrid retrieval approach allowed generated answers to be checked against
+  explicit entity and relationship evidence rather than relying on semantic
+  similarity alone. Verification was further supported through subject, action,
+  and verb parsing to compare responses against information extracted from the
+  knowledge graph.</p><p>The architecture was designed to remain
+  provider-agnostic. A configurable model catalogue supported OpenAI models,
+  Amazon Bedrock models such as Claude, Llama 3, and Mistral, as well as Gemini,
+  xAI, and locally hosted Ollama models including DeepSeek R1, LLaVA, and
+  Qwen2.5.</p><p>We assessed each configuration using BERTScore and ROUGE-L
+  across 275 benchmark runs. The project also included a pytest test suite,
+  GitHub Actions continuous integration and deployment, Discord build
+  notifications, and secure credential management throughout.</p><p>To
+  demonstrate the system, we developed an interactive Streamlit interface that
+  allowed users to submit queries, explore retrieved evidence, and review
+  generated responses. As a team, we also communicated our research through
+  interim presentations and a final academic poster presentation, explaining the
+  system architecture, experimental methodology, findings, and practical
+  implications to both technical and non-technical audiences.</p><p>The project
+  received a mark of 74%.</p>
 award: 'Uni: First Class'
 ---
+
