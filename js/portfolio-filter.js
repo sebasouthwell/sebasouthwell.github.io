@@ -124,8 +124,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var key = profession.toLowerCase();
         var cvHref = CV_BY_PROFESSION[key] || CV_BY_PROFESSION.all;
+        var cvLabel = profession === 'all' ? 'CV' : profession + ' CV';
         cvLinks.forEach(function (link) {
           link.setAttribute('href', cvHref);
+          link.setAttribute('aria-label', cvLabel);
+          link.setAttribute('title', cvLabel);
+          if (link.hasAttribute('data-cv-nav-label')) {
+            link.textContent = cvLabel;
+          }
+          var icon = link.querySelector('#fa-3');
+          if (icon) {
+            icon.setAttribute('aria-label', cvLabel);
+            icon.setAttribute('title', cvLabel);
+          }
         });
 
         updateEducationVariant(profession);
