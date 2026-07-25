@@ -4,5 +4,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+vendor/
+.bundle/config.local-fixBranch
 
 Gemfile.lock

@@ -1,0 +1,23 @@
+---
+layout: default
+modal-id: 2
+weight: 150
+title: The eParent Revision Monitor
+date: 2020-03-01
+img: eParent.png
+alt: eParent Revision Monitor screenshot
+project-date: Nov 2019 - Mar 2020
+client: A-Level Coursework
+category: Coursework
+profession: [Software Engineering, DevOps]
+tags: [Python, Encryption, Authentication, Desktop App, AWS]
+description: >
+  My A-Level Computer Science NEA, where using external libraries was
+  actively discouraged to maximise marks for complex, self-built behaviour
+  — so I went beyond the brief and wrote my own RSA encryption for
+  client-server communication. Users create an account and get quizzed with
+  tailored revision questions during pre-set study sessions, enforced by
+  background program detection that blocks distractions (games, browsers)
+  until the session ends. No public release, but I plan to rebuild a
+  cleaner, more polished version eventually.
+---

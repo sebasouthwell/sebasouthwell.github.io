@@ -1,0 +1,24 @@
+---
+layout: default
+modal-id: 3
+weight: 140
+title: The eMentor WebApp
+date: 2021-05-01
+img: eMentor.png
+alt: eMentor WebApp screenshot
+project-date: Dec 2020 - May 2021
+client: University of Sheffield
+award: 'Uni: First Class 100% Sem 2'
+category: University
+profession: [Software Engineering, Full-Stack]
+tags: [Ruby, Sinatra, Full-Stack, Security, Group Project]
+description: >
+  My first-year COM1001 (Introduction to Software Engineering) group
+  project — a 7-person team reduced to 4 active contributors due to the
+  pandemic, still delivering a solid product for our client through weekly
+  meetings. Built in Ruby Sinatra, my first real full-stack build. Security
+  wasn't a formal requirement, but I applied hashing and salting,
+  non-consecutive IDs, random cookie tokens, and XSS prevention anyway. I
+  made roughly two-thirds of all commits across the project, which scored
+  85% in the first semester and 100% in the second, for a 92% module total.
+---

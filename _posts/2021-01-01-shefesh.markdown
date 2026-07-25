@@ -1,0 +1,21 @@
+---
+layout: default
+modal-id: 5
+weight: 120
+title: Sheffield Ethical Student Hackers Society Website
+date: 2021-01-01
+img: ShefESH_Site.png
+alt: Sheffield Ethical Student Hackers Society website screenshot
+project-date: Ongoing
+client: Sheffield Ethical Student Hackers Society
+category: Committee Role
+profession: [Software Engineering, Front-End, DevOps]
+tags: [HTML, CSS, JavaScript, Git, AWS, Volunteering]
+description: >
+  As Inclusions Officer for the Sheffield Ethical Student Hackers Society, my
+  role extends beyond inclusions into general committee work — helping
+  design and present Ethical Hacking sessions, and making website changes
+  as needed. Committee contributions include fixing formatting on the
+  committee page and building a fully functional hamburger menu using git
+  and multiple branches, a technique I later reused on this site.
+---

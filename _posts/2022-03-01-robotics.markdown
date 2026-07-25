@@ -1,0 +1,23 @@
+---
+layout: default
+modal-id: 13
+weight: 70
+title: Robotics — Simulated TurtleBot3 Navigation
+date: 2022-03-01
+img: Robotics.png
+alt: Screenshot of a live Gazebo simulation showing a TurtleBot3 Waffle robot in the COM2009 course's numbered-zone arena, surrounded by coloured obstacles
+project-date: Jan 2022 - May 2022
+client: University of Sheffield
+category: University
+profession: [Hardware, AI, Software Engineering]
+tags: [ROS, Gazebo, Python, TurtleBot3, Simulation, Group Project]
+description: >
+  A second-year Robotics module (COM2009), programming ROS1 nodes to
+  control a simulated TurtleBot3 Waffle in Gazebo — sensing, movement
+  control and reacting to a numbered-zone arena, built around the course's
+  own custom message, service and action definitions. Lecture material
+  covered PID control, sensor fusion, localisation, path planning and SLAM.
+  The screenshot here is genuinely live: I rebuilt the module's original
+  ROS package and relaunched the exact same simulation arena the course
+  used, rather than reconstructing it from memory (65%).
+---

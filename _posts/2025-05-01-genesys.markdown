@@ -1,0 +1,35 @@
+---
+layout: default
+modal-id: 4
+weight: 20
+title: Genesys — Career Guidance Platform for epiGenesys
+date: 2025-05-01
+img: Genesys.png
+alt: Diagram illustrating Genesys's BFS-based career hop-distance graph, connecting a user to adjacent careers with skill-match percentages
+project-date: Oct 2024 - May 2025
+client: epiGenesys (University of Sheffield spinout)
+award: 'Uni: First Class'
+category: University
+profession: [Software Engineering, Full-Stack, Front-End, Back-End, DevOps]
+tags: [Ruby on Rails, PostgreSQL, RSpec, Capybara, Devise, CI/CD, Security, Group Project]
+description: >
+  A two-semester team project (COM4525) built for University of Sheffield
+  spinout epiGenesys — the initial concept, a career-guidance platform that
+  matches users to adjacent careers by skill overlap rather than job title,
+  was one I proposed and helped shape into the team's brief. I ran the Lean
+  Startup discovery work myself: 30-35 customer interviews, two personas,
+  experience/pain-point mapping and a full Lean Canvas business model, before
+  any code was written. On the engineering side I worked across the Rails 7
+  stack, including the career-matching engine — a BFS-precomputed hop-distance
+  graph over careers (see the diagram) scored against the SFIA skill
+  framework, backed by a DelayedJob background worker so the graph recalculates
+  without blocking requests. Security followed Devise + CanCanCan RBAC with
+  HaveIBeenPwned k-anonymity password checks, and was verified with Brakeman
+  and Bundler Audit static scans. Testing combined RSpec unit specs with
+  Capybara/Selenium end-to-end flows, plus an in-house analytics layer (no
+  third-party trackers) for lead capture and conversion. A dedicated UX
+  testing round — moderated sessions, WCAG contrast checks, keyboard-only and
+  simulated colour-blind passes — caught real accessibility gaps (low-contrast
+  buttons, un-tabbable filter dropdowns) that were then fixed and re-tested.
+  Marked highly for its testing, security and performance engineering (75%).
+---

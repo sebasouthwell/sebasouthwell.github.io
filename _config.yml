@@ -3,8 +3,8 @@ title: Sebastian Southwell
 email: sas@sebasouthwell.co.uk
 url: sebasouthwell.co.uk  
 description: "The portfolio website of Sebastian Southwell"
-keywords: "your keywords, separated by commas"
-skills: "DevOps Engineer - Masters of Computing Student"
+keywords: "DevOps Engineer, Software Engineer, Full-Stack Developer, Ruby, Python, Sheffield"
+skills: "DevOps Engineer - MComp Computer Science Graduate"
 meta_author: Southwell Sebastian
 
 # Google webmaster tools
@@ -32,23 +32,21 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: Sebastian Southwell
   location: Location
   social: Around the Web
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/sebasouthwell
+  - title: linkedin
+    url: https://www.linkedin.com/in/sebasouthwell/
+  - title: facebook
+    url: https://www.facebook.com/SebNeedsABetterUsername
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/8808818/sebastian-southwell
 
 links:
   github: https://github.com/sebasouthwell
@@ -61,8 +59,7 @@ links:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Sheffield, United Kingdom
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
@@ -72,9 +69,12 @@ markdown: kramdown
 permalink: pretty
 
 #for posts
+# Portfolio posts are only ever rendered via modal popup (see _includes/modals.html),
+# not as standalone pages, so skip writing them to _site/ entirely. Without this,
+# every post plus index.html previously collided at the same output path.
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
-      permalink: ""
+      output: false

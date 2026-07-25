@@ -1,0 +1,24 @@
+---
+layout: default
+modal-id: 1
+weight: 130
+title: The AnyQueue Music System
+date: 2021-06-01
+img: AnyQueue.png
+alt: AnyQueue Music System screenshot
+project-date: June 2021
+client: Personal Project
+category: Personal Project
+profession: [Software Engineering, Full-Stack, DevOps]
+tags: [Ruby, Sinatra, AWS, Spotify API, Full-Stack]
+description: >
+  My first personal web development project, built in Ruby/Sinatra using
+  the Spotify API. AnyQueue lets Spotify Premium users create shareable
+  rooms where guests can add songs to the host's queue via a custom search
+  menu, with all user-added songs visible on the main page. Originally
+  prototyped as a smaller C# version that only let people add to my own
+  queue, I rebuilt it in Ruby for full-stack database management once I saw
+  room to expand it. All the styling is hand-written CSS with no Bootstrap
+  or Tailwind — I hadn't touched a CSS framework yet at this point. Hosted
+  on AWS, currently in Spotify Development mode for beta testers.
+---
