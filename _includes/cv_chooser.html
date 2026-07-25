@@ -1,0 +1,24 @@
+<div class="cv-chooser-modal modal fade" id="cvChooserModal" tabindex="-1" role="dialog" aria-labelledby="cvChooserTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="cv-chooser-eyebrow">Curriculum vitae</p>
+        <h2 class="modal-title" id="cvChooserTitle">Which CV would you like to view?</h2>
+        <p class="cv-chooser-intro">Choose the version most relevant to your role.</p>
+      </div>
+      <div class="modal-body">
+        <div class="cv-card-row">
+          {% for cv in site.data.cvs %}
+          <a class="cv-choice-card{% if cv.profession == 'all' %} selected{% endif %}" href="{{ cv.file }}" target="_blank" rel="noopener" data-cv-choice="{{ cv.profession }}">
+            <span class="cv-choice-icon" aria-hidden="true"><i class="{{ cv.icon }}"></i></span>
+            <strong>{{ cv.name }}</strong>
+            <span>{{ cv.description }}</span>
+            <span class="cv-choice-action">View CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

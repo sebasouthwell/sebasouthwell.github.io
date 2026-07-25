@@ -1,0 +1,45 @@
+- profession: all
+  name: Multidisciplinary CV
+  icon: fa-solid fa-compass
+  description: Broad software, systems and engineering experience.
+  file: /files/SasCV.pdf
+- profession: devops
+  name: DevOps CV
+  icon: fa-solid fa-cloud
+  description: Cloud platforms, automation, delivery and operations.
+  file: /files/SasCV.pdf
+- profession: software engineering
+  name: Software Engineering CV
+  icon: fa-solid fa-code
+  description: Software design, development, testing and delivery.
+  file: /files/SasCV.pdf
+- profession: ai
+  name: AI CV
+  icon: fa-solid fa-brain
+  description: Machine learning, LLM research and intelligent systems.
+  file: /files/SasCV.pdf
+- profession: hardware
+  name: Hardware CV
+  icon: fa-solid fa-microchip
+  description: IoT, robotics and hardware-connected software.
+  file: /files/SasCV.pdf
+- profession: full-stack
+  name: Full-Stack CV
+  icon: fa-solid fa-layer-group
+  description: End-to-end product and web application development.
+  file: /files/SasCV.pdf
+- profession: front-end
+  name: Front-End CV
+  icon: fa-solid fa-display
+  description: Interfaces, accessibility and user experience.
+  file: /files/SasCV.pdf
+- profession: back-end
+  name: Back-End CV
+  icon: fa-solid fa-server
+  description: APIs, data, services and application architecture.
+  file: /files/SasCV.pdf
+- profession: mobile development
+  name: Mobile Development CV
+  icon: fa-solid fa-mobile-screen
+  description: Mobile applications and cross-platform engineering.
+  file: /files/SasCV.pdf

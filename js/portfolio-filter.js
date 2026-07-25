@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var items = document.querySelectorAll('.portfolio-flex-item');
   var emptyState = document.getElementById('portfolioEmptyState');
   var cvLinks = document.querySelectorAll('[data-profession-cv]');
+  var cvChoices = document.querySelectorAll('[data-cv-choice]');
 
   var flexRow = document.getElementById('portfolioFlexRow');
   var showMoreRow = document.getElementById('portfolioShowMoreRow');
@@ -137,6 +138,9 @@ document.addEventListener('DOMContentLoaded', function () {
             icon.setAttribute('aria-label', cvLabel);
             icon.setAttribute('title', cvLabel);
           }
+        });
+        cvChoices.forEach(function (choice) {
+          choice.classList.toggle('selected', choice.getAttribute('data-cv-choice') === key);
         });
 
         updateEducationVariant(profession);

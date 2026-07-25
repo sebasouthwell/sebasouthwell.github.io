@@ -1595,3 +1595,176 @@ footer .footer-below {
 .education-projects li a:hover {
     color: #40174a;
 }
+
+/* Radial CV chooser */
+.cv-chooser-modal .modal-dialog {
+    width: min(1120px, calc(100% - 30px));
+    margin: 50px auto;
+}
+
+.cv-chooser-modal .modal-content {
+    overflow: hidden;
+    border: 0;
+    border-radius: 18px;
+}
+
+.cv-chooser-modal .modal-header {
+    position: relative;
+    padding: 28px 34px 22px;
+    border: 0;
+    background: var(--purple);
+    color: #fff;
+    text-align: center;
+}
+
+.cv-chooser-modal .close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    color: #fff;
+    font-size: 32px;
+    opacity: .8;
+}
+
+.cv-chooser-modal .close:hover,
+.cv-chooser-modal .close:focus {
+    color: #fff;
+    opacity: 1;
+}
+
+.cv-chooser-eyebrow {
+    margin: 0 0 5px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .78;
+}
+
+.cv-chooser-modal .modal-title {
+    margin: 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cv-chooser-intro {
+    margin: 8px 0 0;
+    opacity: .86;
+}
+
+.cv-chooser-modal .modal-body {
+    padding: 26px;
+    background: #f7f4f8;
+}
+
+.cv-card-row {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 2px 2px 12px;
+    scroll-snap-type: x proximity;
+}
+
+.cv-choice-card {
+    position: relative;
+    display: flex;
+    flex: 0 0 210px;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 245px;
+    padding: 22px;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 5px 18px rgba(45, 20, 49, .09);
+    scroll-snap-align: start;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.cv-choice-card.selected {
+    border-color: var(--purple);
+}
+
+.cv-choice-card.selected::before {
+    content: "Selected";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--purple);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.cv-choice-card:hover,
+.cv-choice-card:focus {
+    border-color: var(--purple);
+    color: #333;
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 9px 24px rgba(45, 20, 49, .16);
+    outline: none;
+}
+
+.cv-choice-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 18px;
+    border-radius: 13px;
+    background: rgba(92, 33, 101, .1);
+    color: var(--purple);
+    font-size: 24px;
+}
+
+.cv-choice-card strong {
+    margin-bottom: 9px;
+    color: var(--purple);
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.cv-choice-card > span:not(.cv-choice-icon):not(.cv-choice-action) {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.cv-choice-action {
+    margin-top: auto;
+    padding-top: 18px;
+    color: var(--purple);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .cv-chooser-modal .modal-dialog {
+        width: calc(100% - 20px);
+        margin: 18px auto;
+    }
+
+    .cv-chooser-modal .modal-header {
+        padding: 25px 35px 19px;
+    }
+
+    .cv-chooser-modal .modal-title {
+        font-size: 22px;
+    }
+
+    .cv-chooser-modal .modal-body {
+        padding: 18px 14px;
+    }
+
+    .cv-choice-card {
+        flex-basis: min(78vw, 260px);
+    }
+}
